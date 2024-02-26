@@ -1,0 +1,88 @@
+/*In the next block we put the font family that we define by default in my page also we remove the margin*/
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.header {
+    font-size: 20px;
+    width: auto;
+    background-color: darkblue;
+    color: whitesmoke;
+    padding: 0.5% 10% 5% 10%;
+}
+
+.header h2 {
+    margin-top: 6%;
+    margin-bottom: 2%;
+}
+
+.subtitle{
+    margin: 0;
+    opacity: 0.6;
+    font-weight: lighter;
+}
+
+.b1{
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.button{
+    text-align: center;
+    background-color: blue;
+    color: whitesmoke;
+    border-radius: 6px;
+    padding: 10px;
+    border-color: blue;
+}
+
+.outline-button{
+    align-items: center;
+    text-align: end;
+    background-color: whitesmoke;
+    color: blue;
+    border-radius: 6px;
+    padding: 10px;
+    border-color: darkblue;
+}
+
+.button:focus, .button.focus {
+    box-shadow: rgba(243, 248, 250, 0);
+}
+
+.footer {
+    background-color: #081134;
+    position: fixed;
+    bottom: 0; /* This allow fix footer at the bottom */
+    width: 100%;
+    color: whitesmoke;
+    text-align: center;
+    padding: 5% 0;
+    height: min-content;
+    margin: 0;
+}
+.footer input {
+    padding: 10px;
+    border-radius: 6px;
+    display: inline-block;
+    margin: 2% 0.5%;
+    vertical-align: middle;
+}
+
+.row {
+    padding: 10px;
+    border-radius: 6px;
+    margin: 2% 0.5%;
+    vertical-align: middle;
+    display: flex; /* Utilizamos flexbox para distribuir los elementos horizontalmente */
+    align-items: center;
+    justify-content: space-between; /* Distribuirá el espacio disponible entre los elementos */
+}
+
+/*When do you want to modify something about one component you put the name of component wrapper and the the name
+of the item that you want modify for example header h2*/
+/*Padding || margin: top-right-bottom-left || vertical-horizontal*/
+/*align-items: vertical alignment */
+/*justify-content: space between the elements*/
+/*display: flex-> put elements horizontal*/
