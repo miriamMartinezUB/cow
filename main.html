@@ -2,175 +2,31 @@
 <html lang="es-ES">
 <head>
     <meta charset="UTF-8">
-    <link href="style.css" rel="stylesheet" type="text/css"/>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
     <title>Alojamientos.com</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        html, body {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
 </head>
 <body>
-    <div class="header">
-        <div class="row-space-between">
-            <h3>Alojamientos.com</h3>
-            <div>
-                <input class="outline-button" type="submit" value="Registrate">
-                <input class="outline-button" type="submit" value="Inicia sesión">
-            </div>
-        </div>
-        <h2>Somos un Planificador de viajes rápido y sencillo.</h2>
-        <p class="subtitle">Encuentra los mejores alojamientos allí donde vayas.</p>
-    </div>
-    <div class="content">
-        <div class="left-content">
-            <form>
-                <h3>¿Cual es tu proximo destino?</h3>
-                <input class="input" type="text" name="location" id="location" value="">
-                <div class="row">
-                    <p>Check-in:</p>
-                    <input class="input" type="date" name="checkIn" id="checkIn" value="">
-                </div>
-                <div class="row">
-                    <p>Check-Out:</p>
-                    <input class="input" type="date" name="checkOut" id="checkOut" value="">
-                </div>
-                <div class="row">
-                    <p>Personas:</p>
-                    <input class="input" type="number" name="people" id="people" value="">
-                </div>
-                <input class="button-small" type="submit" value="Reservar">
-            </form>
-            <br><hr class="solid">
-            <form action="http://www.google.com/search" metdod="get">
-                <h3>Encuentra más información por internet</h3>
-                <p>¿Donde te gustaria ir?</p>
-                <div class="inline">
-                    <input class="input" type="text" name="q">
-                    <input class="button-small" type="submit" value="Buscar">
-                </div>
+    <nav class="navbar navbar-light" style="background-color: darkblue;">
+        <div class="container-fluid">
+            <a class="navbar-brand"><h3>Alojamientos.com</h3></a>
+            <form class="d-flex gap-2 m-3">
+                <button class="btn btn-outline-light" type="submit">Registrate</button>
+                <button class="btn btn-outline-light" type="submit">Inicia sesión</button>
             </form>
         </div>
-        <hr class="solid">
-        <div>
-            <h2>Tus búsquedas recientes</h2>
-            <div class="scroll">
-                <div class="row">
-                    <div class="space">
-                        <img class="image" src="img/hotel_1.jpeg">
-                        <h3>Hotel 1</h3>
-                    </div>
-                    <div class="space">
-                        <img class="image" src="img/hotel_2.jpeg">
-                        <h3>Hotel 2</h3>
-                    </div>
-                    <div class="space">
-                        <img class="image" src="img/hotel_3.jpeg">
-                        <h3>Hotel 3</h3>
-                    </div>
-                    <div class="space">
-                        <img class="image" src="img/hotel_4.jpeg">
-                        <h3>Hotel 4</h3>
-                    </div>
-                </div>
-            </div>
-            <div >
-                <h1>Destinos de moda</h1>
-                <table class="table">
-                    <tr>
-                        <th><h3>Regiones</h3></th>
-                        <th><h3>Ciudades</h3></th>
-                        <th><h3>Lugares de interés</h3></th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h4>Fuerteventura</h4>
-                            <p>2.913 alojamientos</p>
-                        </td>
-                        <td>
-                            <h4>La Seu d'Urgell, España</h4>
-                            <p>20 alquileres vacacionales, 3 cabañas y casas de campo</p>
-                        </td>
-                        <td>
-                            <a href="https://es.wikipedia.org/wiki/Walt_Disney_World_Resort">Walt Disney World Resort</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h4>Formentera</h4>
-                            <p>399 alojamientos</p>
-                        </td>
-                        <td>
-                            <h4>Besalú, España</h4>
-                            <p>28 alquileres vacacionales, 8 cabañas y casas de campo</p>
-                        </td>
-                        <td><a href="https://es.wikipedia.org/wiki/Torre_Sevilla">Torre Sevilla</a></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h4>Tenerife</h4></a>
-                            <p>6.807 alojamientos</p>
-                        </td>
-                        <td>
-                            <h4>Pont de Suert, España</h4>
-                            <p>10 alquileres vacacionales</p>
-                        </td>
-                        <td><a href="https://es.wikipedia.org/wiki/Torre_Eiffel">Torre Eiffel, París</a></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h4>Galicia</h4>
-                            <p>6.553 alojamientos</p>
-                        </td>
-                        <td>
-                            <h4>Buenos Aires</h4>
-                            <p>5134 hoteles</p>
-                        </td>
-                        <td><a href="https://es.wikipedia.org/wiki/Salto_del_Laja">Salto del Laja</a></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h4>Asturias</h4>
-                            <p>3.311 alojamientos</p>
-                        </td>
-                        <td>
-                            <h4>Pont de Suert, España</h4>
-                            <p>10 alquileres vacacionales</p>
-                        </td>
-                        <td><a href="https://es.wikipedia.org/wiki/PortAventura_World">PortAventura World</a></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h4>Gran Canarias</h4>
-                            <p>5.972 alojamientos</p>
-                        </td>
-                        <td>
-                            <h4>Espot, España</h4>
-                            <p>21 alquileres vacacionales, 3 cabañas y casas de campo</p>
-                        </td>
-                        <td><a href="https://es.wikipedia.org/wiki/Cataratas_del_Iguaz%C3%BA">Cataratas del Iguazú</a></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h4>Bora Bora</h4></a>
-                            <p>59 alojamientos</p>
-                        </td>
-                        <td>
-                            <h4>Puigcerdà, España</h4>
-                            <p>63 alquileres vacacionales, 14 cabañas y casas de campo</p>
-                        </td>
-                        <td><a href="https://es.wikipedia.org/wiki/Playa_de_la_Barrosa">Playa de la Barrosa</a></td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-    <footer>
-        <div class="footer">
-            <p class="b1">¡Ahorra tiempo!</p>
-            <p class="subtitle">Registrate para recibir las mejores ofertas</p>
-            <input id="email" type="text" placeholder="Email">
-            <input class="button" type="submit" value="Subscríbete">
-        </div>
-    </footer>
+    </nav>
 </body>
 </html>
-
-
 
