@@ -91,12 +91,13 @@ html, body {
 .outline-button{
     align-items: center;
     text-align: end;
-    background-color: whitesmoke;
-    color: blue;
+    background-color: darkblue;
+    color: whitesmoke;
     border-radius: 6px;
     padding: 10px;
-    border-color: darkblue;
+    border-color: whitesmoke;
 }
+
 .left-content{
     width: 25%;
 }
