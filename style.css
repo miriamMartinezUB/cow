@@ -91,7 +91,7 @@ html, body {
 .outline-button{
     align-items: center;
     text-align: end;
-    background-color: darkblue;
+    background-color: rgba(0, 0, 139, 0);
     color: whitesmoke;
     border-radius: 6px;
     padding: 10px;
